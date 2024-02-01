@@ -85,20 +85,38 @@ body::-webkit-scrollbar-thumb{
 
 /* menubtn */
 .icon{
-  opacity: 0;
+  padding-left: 40vh;
+  opacity: 1;
 }
 
-#nav button i{
+.icon i{
   font-size: 2vw;
   padding: 20px;
 }
 
 
-.icon button{
+.icon{
   background-color: transparent;
   border: none;
 }
-  
+
+.icon2{
+  position: absolute;
+  z-index: 10;
+  opacity: 0;
+}
+
+.icon2 i{
+  font-size: 2vw;
+  padding: 20px;
+}
+
+.icon2{
+  background-color: transparent;
+  border: none;
+}
+
+
 
 
 /* menubar style */
@@ -300,12 +318,13 @@ video{
 
 #about-us-in p{
     text-align: center;
+    font-size: 1vw;
     padding: 2vw;
 }
 
 #about-us img{
-    height: 20vw;
-    border-radius: 20px;
+    width: 25vw;
+    border-radius: 10px;
 }
 
 
@@ -333,17 +352,17 @@ video{
 
 
 #card1{
-    background-image: url(card1.jpg);
+    background-image: url("https://images.unsplash.com/photo-1593111774240-d529f12cf4bb?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fGdvbGZ8ZW58MHx8MHx8fDA%3D");
 }
 
 
 #card2{
-    background-image: url(card2.jpg);
+    background-image: url("https://media.istockphoto.com/id/1933111274/photo/woman-golfing-on-mountain-golf-course.webp?b=1&s=170667a&w=0&k=20&c=OWREmwVgy0rPDpiIVYUdwMh7uHkaYtgrxXw9vW-WXUA=");
 }
 
 
 #card3{
-    background-image: url(card3.jpg);
+    background-image: url("https://media.istockphoto.com/id/509345681/photo/golf-pro-teaching-male-golfer.webp?b=1&s=170667a&w=0&k=20&c=g4OTAye92sLWBgVrufWhdzSF7EsAjAjsN2pVUyPInqA=");
 }
 
 
@@ -462,7 +481,7 @@ video{
 
 
   .elem{
-    height: 70%;
+    height: 75%;
     width: 26%;
     overflow: hidden;
     border-radius: 20px;
@@ -490,6 +509,7 @@ video{
     height: 100%;
     width: 100%;
     object-fit: cover;
+    object-position: center;
     transition: all ease 0.5s;
     
   }
@@ -588,12 +608,12 @@ video{
   
   @media (max-width:600px) {
     #nav{
-      height: 15vw;
+      height: 14vw;
       width: 100%;
       /* background-color: red; */
       display: flex;
       align-items: center;
-      padding: 0 8vw;
+      padding: 0 10vw;
       gap: 40px;
       position:fixed;
       justify-content: flex-start;
@@ -610,6 +630,10 @@ video{
   display: none;
 }
 
+#nav2 h4{
+  font-size: 3vw;
+  line-height: 6vh;
+}
 
 #nav .navh4:hover{
   color: #95c11e;
@@ -622,27 +646,22 @@ video{
 }
 
 .icon{
+  opacity: 0;
+}
+
+
+.icon2{
+  position: fixed;
+  z-index: 999;
   opacity: 1;
-  margin-left: 60%;
+  margin-left:70% ;
+  /* margin-top: 20px; */
 }
 
-#nav button i{
-  font-size: 5vw;
+.icon2 i{
+  font-size: 30px;
 }
 
-  
-
-
-  
-
-
-
-
-  
-  
-  
-  
- 
 
 
   /* page1 */
@@ -786,9 +805,9 @@ video{
 
 #about-us{
   display: flex;
-  flex-direction: row;
+  flex-direction:column-reverse;
   align-items: center;
-  justify-content: center;
+  /* justify-content: center; */
   margin: 5vw;
   position: relative;
   z-index: 10;
@@ -802,16 +821,32 @@ video{
   font-size: 3.4vw;
 }
 
+#about-us-in{
+  order: 2;
+}
+
 #about-us-in p{
   font-size: 2vw;
   text-align: center;
   padding: 2vw;
+  padding-bottom: 5vw;
 }
 
 #about-us img{
-  height: 20vw;
-  /* padding: 0 50px; */
-  border-radius: 20px;
+  width: 40vw;
+  border-radius: 10px;
+}
+
+#about-us .image11{
+  margin-top: -12vw;
+  margin-left: -50vw;
+
+}
+
+#about-us .image12{
+  margin-bottom: -14.5vw;
+  margin-left:45vw;
+
 }
 
 
@@ -826,9 +861,9 @@ video{
 }
 
 .cards{
-  height: 40%;
+  height: 50%;
   width: 50%;
-  border-radius: 20px;
+  border-radius: 10px;
   background-size: cover;
   background-position: center;
   position: relative;
@@ -864,7 +899,7 @@ video{
 
 /* card2 green dot */
 #green-in{
-  height: 20vh;
+  height: 13vh;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -943,7 +978,7 @@ video{
 /* footer style */
 
 #footer {
-  height: 20vh;
+  height: 16vh;
   width: 100%;
   background: linear-gradient(to left bottom, #119f3a 0%, #a3d421 80%);
   position: relative;
